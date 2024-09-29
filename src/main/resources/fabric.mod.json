@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "create_for_science",
+	"version": "${version}",
+	"name": "Create: For Science",
+	"description": "Adding the world of fictional science to Create.",
+	"authors": [
+		"FalSociety"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/create_for_science/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.falsociety.forscience.CreateForScience"
+		],
+		"client": [
+			"net.falsociety.forscience.CreateForScienceClient"
+		],
+		"fabric-datagen": [
+			"net.falsociety.forscience.CreateForScienceDataGenerator"
+		]
+	},
+	"mixins": [
+		"create_for_science.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
